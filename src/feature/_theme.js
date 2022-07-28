@@ -3,7 +3,7 @@
     // Create setInterval to act as a listener until theme editor elements exist
     let searchIntervalNew = setInterval(() => {
       // Locate iframe and sidebar
-      let hasThemeIframe = document.querySelector(`[title="Online Store"]`)
+      let hasThemeIframe = document.querySelector(`[title="Online Store"], [title="Tienda online"]`)
       if (!hasThemeIframe) return;
 
       let hasThemeContent = hasThemeIframe.contentDocument.querySelector('[data-diffy-attribute="sidebar"]')
